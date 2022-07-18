@@ -57,7 +57,7 @@ const questions = [
 function init() {
   inquirer.prompt(questions)
   .then((scriptData) => {
-  fs.writeFile("./utils/steph/README.md", generateMarkdown(scriptData) , (err) => 
+  fs.writeFile("./utils/GeneratedREADME/README.md", generateMarkdown(scriptData) , (err) => 
   (err) ? console.error(err) : console.log("Success"))
 })
 };

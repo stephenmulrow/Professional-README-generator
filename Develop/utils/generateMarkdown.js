@@ -1,7 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  return `${answers.license}`
+  // return `${answers.license}`
    // return a string
 } 
 
@@ -15,17 +15,16 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  return `${renderLicenseBadge(license)}\n ${renderLicenseLink(license)}`
+  // return `${renderLicenseBadge(license)}\n ${renderLicenseLink(license)}`
  
 }
 
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answers) {
-  console.log(answers)
   return `
 # ${answers.title}
-https://github.com/${answers.username}/${answers.title}
+https://github.com/${answers.username}/
 # Description
 ${answers.description}
 # Table of Contents 
@@ -41,7 +40,6 @@ The following necessary dependencies must be installed to run the application pr
 In order to use this app, ${answers.usage}
 # License
 ${answers.license}
-${renderLicenseSection(answers.license)} 
 # Contributing
 ​Contributors: ${answers.contribution}
 # Tests
